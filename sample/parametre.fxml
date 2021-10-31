@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="554.0" prefWidth="731.0" style="-fx-background-color: #7156DD;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminController">
+   <children>
+      <AnchorPane layoutX="25.799999237060547" layoutY="25.0" prefHeight="499.0" prefWidth="730.0" style="-fx-background-color: #3f2b63;" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <TextField fx:id="nomfid" layoutX="300.0" layoutY="150.0" AnchorPane.leftAnchor="300.6" AnchorPane.rightAnchor="230.79999999999998" AnchorPane.topAnchor="150.0" />
+            <TextField fx:id="usernamefid" layoutX="300.0" layoutY="250.0" AnchorPane.leftAnchor="300.6" AnchorPane.rightAnchor="230.79999999999998" AnchorPane.topAnchor="250.0" />
+            <PasswordField fx:id="mdpfid" layoutX="300.0" layoutY="350.0" AnchorPane.leftAnchor="300.6" AnchorPane.rightAnchor="230.79999999999998" AnchorPane.topAnchor="350.0" />
+            <Button fx:id="modifier" layoutX="505.0" layoutY="428.0" mnemonicParsing="false" onAction="#modifier" prefHeight="26.0" prefWidth="101.0" style="-fx-background-radius: 12; -fx-background-color: #7156DD;" text="Modifier" textFill="WHITE" AnchorPane.bottomAnchor="39.59999999999998" AnchorPane.rightAnchor="73.79999999999998">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="100.0" layoutY="350.0" text="Mot de pass" textFill="WHITE" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="350.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="150.0" text="Nom" textFill="WHITE" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="150.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="250.0" text="Utilisateur" textFill="WHITE" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="250.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="235.0" layoutY="32.0" text="Informations Administrateur" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="235.0" AnchorPane.rightAnchor="175.60000000000002" AnchorPane.topAnchor="32.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

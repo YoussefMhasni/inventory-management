@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+<AnchorPane prefHeight="562.0" prefWidth="731.0" style="-fx-blend-mode: white; -fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BureauController">
+   <children>
+      <AnchorPane layoutY="59.0" prefHeight="505.0" prefWidth="775.0" style="-fx-background-radius: 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="59.0">
+         <children>
+            <LineChart fx:id="rapportvente" layoutX="-7.0" layoutY="234.0" prefHeight="242.0" prefWidth="360.0" title="Ventes" verticalGridLinesVisible="false" verticalZeroLineVisible="false" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="245.0">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" />
+               </yAxis>
+               <opaqueInsets>
+                  <Insets top="50.0" />
+               </opaqueInsets>
+            </LineChart>
+            <PieChart fx:id="statistiquevente" layoutX="10.0" layoutY="14.0" prefHeight="216.0" prefWidth="763.0" style="-fx-background-radius: 20;" title="TOP des Ventes" AnchorPane.bottomAnchor="273.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="14.0">
+               <stylesheets>
+                  <URL value="@dashboard.css" />
+               </stylesheets>
+            </PieChart>
+            <LineChart fx:id="rapportachat" layoutX="389.0" layoutY="251.0" prefHeight="216.0" prefWidth="360.0" title="Achats" verticalGridLinesVisible="false" verticalZeroLineVisible="false" AnchorPane.bottomAnchor="42.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="245.0">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" />
+               </yAxis>
+               <opaqueInsets>
+                  <Insets top="50.0" />
+               </opaqueInsets>
+            </LineChart>
+            <AnchorPane layoutY="-60.0" prefHeight="74.0" prefWidth="775.0" style="-fx-background-color: #7156DD;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="303.0" layoutY="15.0" prefHeight="36.0" prefWidth="149.0" text="Statistiques" textFill="WHITE" AnchorPane.leftAnchor="303.0" AnchorPane.rightAnchor="278.4" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="Tahoma Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

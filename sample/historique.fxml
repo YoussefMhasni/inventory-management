@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HistoriqueController">
+   <children>
+      <AnchorPane prefHeight="554.0" prefWidth="731.0" style="-fx-background-color: #7156DD;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="refreshtable" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="314.0" layoutY="401.0" mnemonicParsing="false" onMouseClicked="#imprimer" prefHeight="38.0" prefWidth="162.0" style="-fx-background-color: #3f2b63; -fx-background-radius: 20;" stylesheets="@style.css" text="Imprimer" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="114.99999999999997" AnchorPane.rightAnchor="254.80000000000004">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" top="5.0" />
+               </padding>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="319.0" layoutY="33.0" prefHeight="43.0" prefWidth="137.0" text="Historique" textFill="WHITE" AnchorPane.leftAnchor="319.0" AnchorPane.rightAnchor="275.0" AnchorPane.topAnchor="33.0">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label alignment="BOTTOM_LEFT" layoutX="142.0" layoutY="188.0" text="Date début" textFill="WHITE" AnchorPane.leftAnchor="142.0" AnchorPane.rightAnchor="490.00000000000006" AnchorPane.topAnchor="184.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="datepickerfin" cache="true" layoutX="300.0" layoutY="184.0" prefHeight="26.0" prefWidth="175.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="256.00000000000006" AnchorPane.topAnchor="300.0" />
+            <DatePicker fx:id="datepickerdebut" layoutX="300.0" layoutY="300.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="256.00000000000006" AnchorPane.topAnchor="184.0" />
+            <Label alignment="BOTTOM_LEFT" layoutX="142.0" layoutY="300.0" text="Date fin" textFill="WHITE" AnchorPane.leftAnchor="142.0" AnchorPane.rightAnchor="519.6" AnchorPane.topAnchor="300.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="clear" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="553.0" layoutY="481.0" mnemonicParsing="false" onMouseClicked="#clear" prefHeight="38.0" prefWidth="130.0" style="-fx-background-color: red; -fx-background-radius: 20;" stylesheets="@style.css" text="Supprimer" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="34.99999999999998" AnchorPane.rightAnchor="47.80000000000004">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="25.0" top="5.0" />
+               </padding>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

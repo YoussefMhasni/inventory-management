@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="634.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FactureController">
+    <children>
+        <HBox layoutY="86.0" prefHeight="468.0" prefWidth="596.0" style="-fx-background-color: white;" />
+        <TableView fx:id="FactureTable" layoutY="74.0" prefHeight="545.0" prefWidth="736.0" stylesheets="@stile.css" AnchorPane.bottomAnchor="-15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="74.0">
+            <columns>
+            <TableColumn fx:id="blcol" maxWidth="2000.0" prefWidth="41.600024414062545" text="BL" />
+                <TableColumn fx:id="bccol" maxWidth="2000.0" prefWidth="39.999969482421875" text="BC°" />
+                <TableColumn fx:id="referencecol" prefWidth="86.39994049072266" style="-fx-font-weigh: #ffffff;" text="Reference" />
+                <TableColumn fx:id="designationcol" minWidth="40.0" prefWidth="156.800048828125" text="Désignation" />
+                <TableColumn fx:id="clientcol" minWidth="50.0" prefWidth="111.20001220703125" text="Client" />
+                <TableColumn fx:id="quantitecol" prefWidth="79.19992065429688" text="Quantité" />
+                <TableColumn fx:id="prixcol" prefWidth="57.60003662109375" text="Prix U.H.T" />
+            <TableColumn fx:id="prixtotalcol" prefWidth="57.60003662109375" text="Total H.T" />
+                <TableColumn fx:id="datecol" minWidth="15.0" prefWidth="80.00006103515625" text="Date sortie" />
+                <TableColumn fx:id="editCol" minWidth="80.0" prefWidth="79.2000732421875" text="Action" />
+            </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+        </TableView>
+        <AnchorPane prefHeight="74.0" prefWidth="731.0" style="-fx-background-color: #7156DD;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button fx:id="downloadfacture" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="480.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#download" prefHeight="38.0" prefWidth="210.0" style="-fx-background-color: #3f2b63; -fx-background-radius: 20;" stylesheets="@style.css" text="Télécharger / Imprimer" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="15.0" top="5.0" />
+                    </padding>
+                </Button>
+                <ChoiceBox fx:id="comboboxcom" layoutX="209.0" layoutY="26.0" prefHeight="26.0" prefWidth="194.0" />
+                <Button alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#add" prefHeight="38.0" prefWidth="107.0" style="-fx-background-color: #3f2b63; -fx-background-radius: 20;" stylesheets="@style.css" text="Ajouter" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="27.0" top="5.0" />
+                    </padding>
+                </Button>
+                <Label layoutX="135.0" layoutY="24.0" prefHeight="30.0" prefWidth="42.0" text="BL°" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

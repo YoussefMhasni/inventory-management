@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="446.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ModifyadminController">
+    <children>
+        <HBox layoutY="-1.0" prefHeight="92.0" prefWidth="620.0" style="-fx-background-color: #3f2b63;">
+            <children>
+                <Label layoutY="100.0" prefHeight="54.0" prefWidth="530.0" text="Modification Administrateur" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets top="10.0" />
+                    </HBox.margin>
+                    <padding>
+                        <Insets left="150.0" />
+                    </padding>
+                </Label>
+            </children>
+        </HBox>
+        <AnchorPane layoutY="88.0" prefHeight="370.0" prefWidth="604.0" style="-fx-background-color: #7156DD;">
+            <children>
+                <Label layoutX="70.0" layoutY="20.0" prefHeight="30.0" prefWidth="100.0" text="Nom" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="70.0" layoutY="100.0" prefHeight="30.0" prefWidth="150.0" text="Nom d'utilisateur" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="70.0" layoutY="180.0" prefHeight="30.0" prefWidth="112.0" text="Mot de passe" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="286.0" layoutY="87.0" prefHeight="370.0" prefWidth="334.0" style="-fx-background-color: #462680;">
+            <children>
+                <TextField fx:id="usernamemodif" layoutX="100.0" layoutY="100.0" />
+                <TextField fx:id="mdpmodif" layoutX="101.0" layoutY="180.0" />
+                <TextField fx:id="nommodif" layoutX="100.0" layoutY="20.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutY="366.0" prefHeight="92.0" prefWidth="620.0" style="-fx-background-color: #3f2b63;">
+            <children>
+                <Button fx:id="save" layoutX="339.0" layoutY="34.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #7156DD;" text="Enregistrer" textFill="WHITE" />
+                <Button fx:id="close" layoutX="495.0" layoutY="34.0" mnemonicParsing="false" onAction="#close" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: red;" text="Quitter" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

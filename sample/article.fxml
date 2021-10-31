@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ArticleController">
+   <children>
+      <TableView fx:id="ArticleTable" layoutY="74.0" prefHeight="554.0" prefWidth="731.0" stylesheets="@stile.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="74.0">
+         <columns>
+            <TableColumn fx:id="referencecol" prefWidth="105.60000765323639" style="-fx-font-weigh: #ffffff;" text="Reference" />
+            <TableColumn fx:id="designationcol" prefWidth="100.79998016357422" text="Désignation" />
+            <TableColumn fx:id="marquecol" prefWidth="108.0" text="Marque" />
+            <TableColumn fx:id="prixachatcol" maxWidth="4000.0" prefWidth="113.5999755859375" text="Prix achat" />
+            <TableColumn fx:id="prixventecol" maxWidth="4000.0" prefWidth="97.60006713867188" text="Prix vente" />
+            <TableColumn fx:id="editCol" minWidth="40.0" prefWidth="208.00006103515625" text="Action" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <AnchorPane prefHeight="74.0" prefWidth="731.0" style="-fx-background-color: #7156DD;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="402.0" layoutY="23.0" prefHeight="28.0" prefWidth="123.0" text="Rechercher" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="filterField" layoutX="502.0" layoutY="18.0" prefHeight="38.0" prefWidth="170.0" style="-fx-background-radius: 20;">
+               <padding>
+                  <Insets bottom="15.0" left="100.0" top="5.0" />
+               </padding>
+            </TextField>
+            <Button fx:id="addentry" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#addarticle" prefHeight="38.0" prefWidth="170.0" style="-fx-background-color: #3f2b63; -fx-background-radius: 20;" stylesheets="@style.css" text=" Ajouter" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="refreshtable" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="213.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#refresharticle" prefHeight="38.0" prefWidth="170.0" style="-fx-background-color: #3f2b63; -fx-background-radius: 20;" stylesheets="@style.css" text="Actualiser" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" top="5.0" />
+               </padding>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

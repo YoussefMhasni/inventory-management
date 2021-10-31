@@ -1,0 +1,16 @@
+.chart-pie-label-line {
+    -fx-stroke: GRAY;
+    -fx-fill: GRAY;
+}
+
+.chart-legend {
+    -fx-background-color:  #fafad2;
+    -fx-stroke: black;
+}
+.chart-legend{
+    -fx-tile : #000000
+}
+.chart-pie-label {-fx-fill: BLACK;}
+.chart-title{
+    -fx-fill:black
+}
