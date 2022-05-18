@@ -1,4 +1,4 @@
-# Requirement<br></p>
+# Requis<br></p>
 Java 8<br>
 mysql server + workbench<br>
 # Instructions<br>
