@@ -1,0 +1,89 @@
+CREATE DATABASE stock;
+create table admin
+(
+    NOM      varchar(30)  null,
+    USERNAME varchar(7)   null,
+    MDP      varchar(256) null
+);
+
+create table article
+(
+    REFERENCE   varchar(40)   not null
+        primary key,
+    DESIGNATION varchar(20)   null,
+    MARQUE      varchar(20)   null,
+    PRIXACHAT   float         null,
+    PRIXVENTE   float         null,
+    QUANTITE    int default 0 null
+);
+
+create table client
+(
+    ID    int auto_increment
+        primary key,
+    NOM   varchar(20) null,
+    TEL   varchar(30) null,
+    FAX   varchar(30) null,
+    EMAIL varchar(30) null
+);
+
+create table entry
+(
+    Id            int auto_increment
+        primary key,
+    REFERENCE     varchar(20) null,
+    DESIGNATION   varchar(20) null,
+    FOURNISSEURID varchar(20) null,
+    QUANTITE      int         null,
+    PRIX          float       null,
+    DATE          date        null
+);
+
+create table facture
+(
+    NUM  varchar(40) not null,
+    jour int         null
+);
+
+create table fournisseur
+(
+    ID  int auto_increment
+        primary key,
+    TEL varchar(10) null,
+    FAX varchar(10) null,
+    NOM varchar(20) null
+);
+
+create table historique
+(
+    EID          int         not null,
+    EREFERENCE   varchar(20) not null,
+    EDESIGNATION varchar(20) null,
+    EQUANTITE    int         null,
+    EPRIX        float       null,
+    EDATE        date        null
+);
+
+create table shistorique
+(
+    SID          int         not null,
+    SREFERENCE   varchar(20) not null,
+    SDESIGNATION varchar(20) null,
+    SQUANTITE    int         null,
+    SPRIX        float       null,
+    SDATE        date        null
+);
+
+create table sortie
+(
+    Id          int auto_increment
+        primary key,
+    BC          int           not null,
+    REFERENCE   varchar(20)   not null,
+    DESIGNATION varchar(20)   null,
+    CLIENT      varchar(20)   null,
+    QUANTITE    int           null,
+    PRIX        float         null,
+    DATE        date          null,
+    BL          int default 0 null
+);
